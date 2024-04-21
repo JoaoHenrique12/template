@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
@@ -8,11 +6,17 @@ return {
 
   -- == Examples of Adding Plugins ==
 
-  "andweeb/presence.nvim",
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
     config = function() require("lsp_signature").setup() end,
+  },
+
+  {
+    "sainnhe/sonokai",
+    init = function() -- init function runs before the plugin is loaded
+      vim.g.sonokai_style = "maia"
+    end,
   },
 
   -- == Examples of Overriding Plugins ==
