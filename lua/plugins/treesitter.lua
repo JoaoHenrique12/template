@@ -10,7 +10,8 @@ return {
       "python",
       "elixir",
       "cpp",
-      -- add more arguments for adding more treesitter parsers
+      "go",
+      "gomod",
     },
   },
 }

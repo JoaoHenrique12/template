@@ -15,6 +15,7 @@ return {
         "lua_ls",
         "elixirls",
         "clangd",
+        "gopls",
         -- add more arguments for adding more language servers
       },
     },
